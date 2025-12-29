@@ -1,2 +1,3 @@
 python/src/auth/manifests/secret.yml
 .venv/
+python/src/gateway/manifests/secret.yml
