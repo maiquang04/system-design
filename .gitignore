@@ -1,3 +1,7 @@
-python/src/auth/manifests/secret.yml
-.venv/
+.DS_Store
+python/src/converter/.vscode/settings.json
+python/src/converter/manifests/secret.yml
 python/src/gateway/manifests/secret.yml
+python/src/rabbit/manifests/secret.yml
+python/src/auth/manifests/secret.yml
+video.mp4

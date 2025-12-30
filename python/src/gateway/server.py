@@ -27,7 +27,7 @@ def login():
         return token
 
 
-@server.route("/upload", method=["POST"])
+@server.route("/upload", methods=["POST"])
 def upload():
     access, err = validate.token(request)
     access = json.loads(s=access)
@@ -47,7 +47,7 @@ def upload():
         return "not authorized", 401
 
 
-@server.route("/download", method=["POST"])
+@server.route("/download", methods=["POST"])
 def download():
     pass
 
