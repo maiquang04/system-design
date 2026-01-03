@@ -10,7 +10,7 @@ def login(request):
     basic_auth = (auth.username, auth.password)
 
     response = requests.post(
-        url=f"http://{os.environ.get("AUTH_SVC")}/login", auth=basic_auth
+        url=f"http://{os.environ.get("AUTH_SVC_ADDRESS")}/login", auth=basic_auth
     )
 
     if response.status_code == 200:

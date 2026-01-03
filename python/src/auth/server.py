@@ -26,7 +26,7 @@ def login():
     )
 
     if res > 0:
-        userrow = res.fetchone()
+        userrow = cursor.fetchone()
         email = userrow[0]
         password = userrow[1]
 

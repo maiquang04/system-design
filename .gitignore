@@ -5,3 +5,4 @@ python/src/gateway/manifests/secret.yml
 python/src/rabbit/manifests/secret.yml
 python/src/auth/manifests/secret.yml
 video.mp4
+python/src/notification/manifests/secret.yml

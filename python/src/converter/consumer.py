@@ -14,7 +14,9 @@ def main():
     fs_mp3s = gridfs.GridFS(db_mp3s)
 
     # rabbitmq
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host="rabbitmq"))
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters(host="rabbitmq", heartbeat=600)
+    )
     channel = connection.channel()
 
     def callback(ch, method, properties, body):
